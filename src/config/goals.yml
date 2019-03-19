@@ -1,0 +1,26 @@
+deploy:
+  before:
+  - admin-app
+
+adminApp:
+  path: .
+  runtime:
+    admin:
+      chmod:  '0777'
+  public:
+    admin:
+      assets:
+        chmod: '0777'
+      index.php:
+        once: true
+        template: admin-app/index.twig
+      robots.txt:
+        template: admin-app/robots.twig
+      media:
+        symlink: ../../runtime/common/media
+  config:
+    bootstrap.php:
+      template: admin-app/bootstrap.twig
+    params.php:
+      template: admin-app/params.twig
+      once: true

@@ -1,0 +1,22 @@
+{
+  "name": "codexten/app-admin-dev",
+  "description": "Eii storage",
+  "type": "library",
+  "require": {
+    "codexten/yii-core": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "codexten\\admin\\dev\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    },
+    "config-plugin": {
+      "hidev": "src/config/hidev.php",
+      "core": "src/config/core.php"
+    }
+  }
+}
