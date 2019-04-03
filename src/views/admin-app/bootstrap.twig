@@ -1,7 +1,7 @@
 <?php
 
 if (!defined('ROOT_DIR')) {
-    define('ROOT_DIR', dirname(dirname(__DIR__ . '/../')));
+    define('ROOT_DIR', dirname(dirname(getcwd() )));
 }
 
 $bootstrap = ROOT_DIR . '/vendor/codexten/yii-core/src/config/bootstrap.php';
