@@ -6,8 +6,10 @@
  * Time: 3:03 PM
  */
 
+/* @var $params array */
+
 return [
     'aliases' => [
-        '@adminUrl' => $_ENV['ADMIN_URL'],
+        '@adminUrl' => $params['app.admin.url'],
     ],
 ];

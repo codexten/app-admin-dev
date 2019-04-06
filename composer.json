@@ -15,8 +15,9 @@
       "dev-master": "2.0.x-dev"
     },
     "config-plugin": {
-      "hidev": "src/config/hidev.php",
-      "core": "src/config/core.php"
+      "hidev": "config/hidev.php",
+      "params": "config/params.php",
+      "core": "config/core.php"
     }
   }
 }
