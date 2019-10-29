@@ -11,6 +11,8 @@ adminApp:
     admin:
       assets:
         chmod: '0777'
+      minify:
+        chmod: '0777'
       index.php:
         once: true
         template: admin-app/index.twig
