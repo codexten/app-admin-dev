@@ -24,6 +24,7 @@ return [
         ],
         'vcsignore' => [
             '/public/admin/assets/*' => 'Admin directories',
+            '/public/admin/minify/*' => 'Admin directories',
             'runtime/admin/*' => 'Admin directories',
         ],
     ],
